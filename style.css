@@ -1,79 +1,82 @@
- body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 300px;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card-name {
-            font-size: 1.5em;
-            margin: 10px 0;
-            color: #333;
-        }
-
-        .card-description {
-            font-size: 0.9em;
-            color: #666;
-            line-height: 1.5;
-        }
-
-
-
-        /* --- Estilos para la Nueva Sección y la Card Específica --- */
-.nueva-seccion-card {
+body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px; /* Espaciado alrededor de la sección */
-    background-color: #e0f2f7; /* Un fondo diferente para la sección */
-    margin-top: 30px; /* Separación de la sección anterior */
-    border-top: 2px dashed #a7d9ed; /* Una línea divisoria */
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    /* Flex-wrap para que las cards se envuelvan si no hay espacio */
+    flex-wrap: wrap; 
+    gap: 20px; /* Espacio entre las cards */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card-description {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* --- Estilos para la Nueva Sección y la Card Específica --- */
+.nueva-seccion-card {
+    display: flex; /* Asegura que si hay más elementos dentro, se alineen */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #e0f2f7;
+    margin-top: 30px;
+    border-top: 2px dashed #a7d9ed;
+    width: 100%; /* Ocupa todo el ancho disponible para su sección */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
 }
 
 .card-johan-especial {
-    border: 3px solid #007bff; /* Un borde distintivo */
-    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2); /* Sombra con color */
-    transform: rotateZ(2deg); /* Un pequeño giro para que se vea diferente */
-    background-color: #ffffff; /* Fondo blanco */
+    border: 3px solid #007bff;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+    transform: rotateZ(2deg);
+    background-color: #ffffff;
 }
 
 .card-johan-especial:hover {
-    transform: translateY(-8px) rotateZ(0deg); /* Efecto hover diferente */
+    transform: translateY(-8px) rotateZ(0deg);
 }
 
 .card-johan-especial .card-name {
-    color: #0056b3; /* Color de texto único para el nombre */
+    color: #0056b3;
 }
 
 .card-johan-especial .card-description {
     color: #555;
-    font-style: italic; /* Texto en cursiva */
+    font-style: italic;
 }
