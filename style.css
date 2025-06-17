@@ -1,46 +1,82 @@
- body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    /* Añadido para que las cards se envuelvan y tengan espacio */
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
 
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 300px;
-            text-align: center;
-            transition: transform 0.2s;
-        }
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+.card:hover {
+    transform: translateY(-5px);
+}
 
-        .card-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
 
-        .card-content {
-            padding: 20px;
-        }
+.card-content {
+    padding: 20px;
+}
 
-        .card-name {
-            font-size: 1.5em;
-            margin: 10px 0;
-            color: #333;
-        }
+.card-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
 
-        .card-description {
-            font-size: 0.9em;
-            color: #666;
-            line-height: 1.5;
-        }
+.card-description {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* --- Estilos para la Nueva Sección y la Card Específica (DEBES PEGAR ESTO AL FINAL) --- */
+.nueva-seccion-card {
+    display: flex; /* Asegura que si hay más elementos dentro, se alineen */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #e0f2f7;
+    margin-top: 30px;
+    border-top: 2px dashed #a7d9ed;
+    width: 100%; /* Ocupa todo el ancho disponible para su sección */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+}
+
+.card-johan-especial {
+    border: 3px solid #007bff;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+    transform: rotateZ(2deg);
+    background-color: #ffffff;
+}
+
+.card-johan-especial:hover {
+    transform: translateY(-8px) rotateZ(0deg);
+}
+
+.card-johan-especial .card-name {
+    color: #0056b3;
+}
+
+.card-johan-especial .card-description {
+    color: #555;
+    font-style: italic;
+}
