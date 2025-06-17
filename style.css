@@ -44,3 +44,36 @@
             color: #666;
             line-height: 1.5;
         }
+
+
+
+        /* --- Estilos para la Nueva Sección y la Card Específica --- */
+.nueva-seccion-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; /* Espaciado alrededor de la sección */
+    background-color: #e0f2f7; /* Un fondo diferente para la sección */
+    margin-top: 30px; /* Separación de la sección anterior */
+    border-top: 2px dashed #a7d9ed; /* Una línea divisoria */
+}
+
+.card-johan-especial {
+    border: 3px solid #007bff; /* Un borde distintivo */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2); /* Sombra con color */
+    transform: rotateZ(2deg); /* Un pequeño giro para que se vea diferente */
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.card-johan-especial:hover {
+    transform: translateY(-8px) rotateZ(0deg); /* Efecto hover diferente */
+}
+
+.card-johan-especial .card-name {
+    color: #0056b3; /* Color de texto único para el nombre */
+}
+
+.card-johan-especial .card-description {
+    color: #555;
+    font-style: italic; /* Texto en cursiva */
+}
