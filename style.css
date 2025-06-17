@@ -6,9 +6,9 @@ body {
     min-height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
-    /* Flex-wrap para que las cards se envuelvan si no hay espacio */
+    /* Añadido para que las cards se envuelvan y tengan espacio */
     flex-wrap: wrap; 
-    gap: 20px; /* Espacio entre las cards */
+    gap: 20px; 
 }
 
 .card {
@@ -48,7 +48,7 @@ body {
     line-height: 1.5;
 }
 
-/* --- Estilos para la Nueva Sección y la Card Específica --- */
+/* --- Estilos para la Nueva Sección y la Card Específica (DEBES PEGAR ESTO AL FINAL) --- */
 .nueva-seccion-card {
     display: flex; /* Asegura que si hay más elementos dentro, se alineen */
     justify-content: center;
